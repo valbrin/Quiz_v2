@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Start quiz Button -->
+    <div class="start_btn">
+        <button>Start Quiz</button>
+    </div>
+    <!-- Info box -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Some Rules of this Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. question</div>
+            <div class="info">2. question</div>
+            <div class="info">3. question</div>
+            <div class="info">4. question</div>
+            <div class="info">5. question</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome quiz Application</div>
+            <div class="timer">
+                <div class="timer_text">Time left</div>
+                <div class="timer_sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <span>What does HTML stand for?</span>
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <span>Hyper Text Preprocessor</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Preprocessor 2</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text multiple lang 2</span>
+                </div>
+                <div class="option">
+                    <span>Hyper Text multiple lang 1</span>
+                </div>
+            </div>
+        </section>
+        <!-- Quiz Box Footer -->
+        <footer>
+            <div class="total_que">
+                <span>
+                    <p>2</p>Of<p>5</p>Questions
+                </span>
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+    <!-- CSS -->
+    <style>
+        /* importing google fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: rgb(74, 65, 105);
+        }
+
+        .start_btn,
+        .info_box,
+        .quiz_box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Start quiz Button Styling */
+        .start_btn button{
+            font-size: 25px;
+            font-weight: 500;
+            color: rgb(216, 138, 22);
+            padding: 15px 30px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .info_box{
+            display: none;
+            width: 540px;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        .info_box .info_title{
+            height: 60px;
+            width: 100%;
+            border-bottom: 1px solid lightgray;
+            display: flex;
+            align-items: center;
+            padding: 0 35px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .info_box .info_list{
+            padding: 15px 35px;
+        }
+
+        .info_box .info_list .info span{
+            font-weight: 600;
+            color: rgb(55, 0, 255);
+        }
+
+        .info_box .buttons{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 35px;
+            border-top: 1px solid rgb(0, 0, 0);
+        }
+
+        .info_box .buttons button{
+            margin: 0 5px;
+            height: 40px;
+            width: 100px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .buttons button.quit{
+            color: #007bff;
+            border-color: #007bff;
+        }
+
+        .buttons button.quit:hover{
+            color: #fff;
+            background: #007bff;
+        }
+
+        .buttons button.restart{
+            color: #fff;
+            background: #007bff;
+        }
+
+        .buttons button.restart:hover{
+            background: #0263ca;
+        }
+
+        .quiz_box{
+            width: 550px;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        .quiz_box header{
+            height: 70px;
+            padding: 0 30px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px 5px 0 0;
+            box-shadow: 0px 3px 5px 1px rgb(74, 65, 105);
+        }
+        /* 22:51 */
+    </style> 
+</body>
+</html>
